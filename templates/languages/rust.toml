@@ -1,0 +1,14 @@
+[tools]
+rust = "latest"
+cargo-binstall = "latest"
+"cargo:cargo-watch" = "latest"
+"cargo:cargo-audit" = "latest"
+
+[env]
+CARGO_HOME = "{{config_root}}/.cargo" 
+"_.path" = "./.cargo/bin"
+
+[tasks]
+build = "cargo build"
+test = "cargo test"
+dev = "cargo watch -x run"

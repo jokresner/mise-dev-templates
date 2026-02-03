@@ -1,0 +1,12 @@
+[tools]
+python = "3.14.3"
+uv = "latest" 
+
+[env]
+_.python.venv = { path = ".venv", create = true }
+UV_PYTHON = "{{config_root}}/.venv/bin/python"
+
+[tasks]
+install = "uv sync" 
+run = "uv run main.py"
+test = "uv run pytest"

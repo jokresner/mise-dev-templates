@@ -1,0 +1,14 @@
+[tools]
+node = "lts"
+yarn = "latest"
+jq = "latest"
+
+[env]
+NODE_ENV = "development"
+"_.path" = "./node_modules/.bin"
+
+[tasks]
+install = "yarn install"
+dev = "yarn dev"
+build = "yarn build"
+lint = "eslint ."
